@@ -1,0 +1,225 @@
+#homeImg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-bottom: 10px solid #7686A8;
+    object-fit:cover;
+    object-position: right;
+    object-fit: cover;
+
+}
+
+html {
+ font-family: 'Open Sans', sans-serif;
+ //padding: 0;
+ //margin: 0;
+ //border: 40px #061738 solid;
+ background-color: EEE;
+}
+
+/* Header */
+header {
+    display:flex;
+    height: 100vh;
+
+}
+nav {
+    background-color: #06173B;;
+    position: fixed;
+    top:0;
+    width:100%;
+    left:0;
+    z-index: 3;
+    border-bottom: 10px solid #FEC458;
+}
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-left: -30px;
+    z-index: 3;    
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    
+}
+a {
+    color: white;
+    text-decoration: none; 
+    z-index: 3;
+    letter-spacing: 2px;
+}
+nav ul li a:hover {
+   font-style: italic;
+   font-weight: 800;
+   color: #FEC458;
+   text-transform: uppercase;
+}
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    color: #F8F8F8;
+    padding: 10px;
+    z-index: 3;   
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+    color: white;
+    width: 100%;
+    margin-top: 450px;
+    z-index: 2;
+    position:absolute;
+    font-family: "arial black"; 
+}
+
+header p {
+    text-align: center;
+    margin-top: 550px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 160px;
+    font-size: 20px;
+    font-family: "arial"; 
+    letter-spacing: 2px;
+} /*Shouldn't work but does*/
+    
+}
+
+/* Header End - Grid Begin*/
+
+.homePage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-areas: 
+        "one one"
+        "two two"
+        "three four"
+        "five six"
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+    text-align: center;
+}
+#four {
+    grid-area: four;
+    text-align: center;
+
+}
+#five {
+    grid-area: five;
+    text-align: center;
+
+}
+#six {
+    grid-area: six;
+    text-align: center;
+
+}
+/* Grid End */
+/*Grid Style Begin*/
+.border {
+    margin: 10px;
+    line-height: 30px;
+    padding: 20px;
+
+}
+h2 {
+ padding-top: 20px;
+ margin-top: -20px;
+ margin-bottom: 10px;
+ font-weight: bolder;
+ font-size: 30px;
+ color:#FEC458;
+ font-family: 'arial black';
+}
+#page2 {
+    height: 100vh;
+}
+h3 {
+    padding: 10px;
+    color: #06173B;
+    height: 60px;
+    margin: 0;
+    height: auto;
+    font-size:25px;
+    letter-spacing: 2px;
+    font-family: "arial black";
+    color: #06173B;
+}
+#img2 {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    margin-top: -40px;
+    margin-left: -40px;
+    border-bottom: 10px solid #7686A8;
+    border-top: 10px solid #7686A8;
+    object-fit: cover;
+
+}
+
+i {
+    color: #FCDFA8;
+    font-size: 20vmax;
+    text-shadow: 1px 3px 8px rgba(0,0,0,0.20);
+
+}
+i:hover {
+    color: #7686A8;
+}
+
+/* Begining of footer */
+
+footer {
+    background-color: #06173B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    font-size: 11px;
+    border-top: 10px solid #FEC458;
+
+}
+
+footer i {
+    color: #7686A8;
+    font-size: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#footerText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footerIcons {
+    display:flex;
+    justify-content: center;
+}
+footer i:hover {
+    color: #FCDFA8;
+}
+
+////////////////////////////////////////////////
+/* Contact Page Style */
